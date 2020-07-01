@@ -8,7 +8,7 @@ export class DinoIpsumGenerator {
       } else {
         jsonifiedResponse = false;
       }
-      return jsonifiedResponse = false;
+      return jsonifiedResponse;
     } catch(error) {
       return false;
     }
