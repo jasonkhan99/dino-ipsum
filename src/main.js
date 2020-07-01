@@ -1,7 +1,7 @@
 import $ from 'jquery';
+// import '//fonts.googleapis.com/css?family=Raleway';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '//fonts.googleapis.com/css?family=Raleway'
 import './css/skeleton.css';
 import './css/normalize.css';
 import './css/custom.css';
@@ -22,14 +22,15 @@ $(document).ready(function () {
       getNames(response);
     })();
     
-    function getNames(response) {
-      if (response) {
-        $('.showName').text(`${response[0][0].replaceDinoName()}`);
-      } else {
-        $('.showName').text(`There was an error handling your request.`);
-      }
+
+  function getNames(response) {
+    if (response) {
+      $('.showName').text(`${response[0][0]}`);
+    } else {
+      $('.showName').text(`There was an error handling your request.`);
     }
-  });
+  }
+});
 
   $(".keyboard-key").on({
     // Upon mouse-down, make the selectedLetter region immediately visible again
