@@ -1,9 +1,21 @@
-/* Some CSS! */
-
 .raptor-img {
-  width: 20%;
+  width: 30%;
+  margin: 1em;
 }
 
 .container {
   text-align: center;
+  background-color: #faeee7;
+}
+
+.btn {
+  margin-top: 1em;
+}
+
+h1 {
+  font-size: 5em;
+}
+
+body {
+  background-color: #ff9234;
 }
