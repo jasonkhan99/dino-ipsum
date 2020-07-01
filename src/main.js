@@ -25,7 +25,13 @@ $(document).ready(function () {
 
   function getNames(response) {
     if (response) {
-      $('.showName').text(`${response[0][0]}`);
+      let splitResponse = response[0][0].split("");
+      for (let i=0; splitResponse.length > i; ++i) {
+        splitResponse.shift();
+        splitResponse.push("__  ");
+      }
+      let hiddenResponse = splitResponse.join("");
+      $('.showName').text(`${hiddenResponse}`);
     } else {
       $('.showName').text(`There was an error handling your request.`);
     }
