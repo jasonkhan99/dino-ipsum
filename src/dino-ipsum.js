@@ -1,4 +1,9 @@
 export class DinoIpsumGenerator {
+
+  constructor() {
+    this.counter = 10;
+  }
+
   async getDinoNames() {
     try {
       let response = await fetch(`http://dinoipsum.herokuapp.com/api/?format=json`);
@@ -12,5 +17,9 @@ export class DinoIpsumGenerator {
     } catch(error) {
       return false;
     }
+  }
+
+  decrementCounter() {
+    this.counter --;
   }
 }
