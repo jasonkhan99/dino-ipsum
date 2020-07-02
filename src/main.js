@@ -15,12 +15,13 @@ function isAlphanumericKey(keycode) {
 $(document).ready(function () {
 
   $("#dinoName").click(function() {
-    
+    $(".name-button").hide();
     (async () => {
       let dinoIpsumGenerator = new DinoIpsumGenerator();
       const response = await dinoIpsumGenerator.getDinoNames();
       getNames(response);
     })();
+    $("#guess").show();
     
 
   function getNames(response) {
@@ -40,9 +41,10 @@ $(document).ready(function () {
   $("#guess").submit(function(event) {
     event.preventDefault();
     let inputArray = $("#letter").val();
-    if (inputArray.length > 1) {
-      (".error").html("<p>Please only enter one letter.</p>")
+    if (inputArray.length !== 1 || inputArray.match(/[^a-z]/i)) {
+      $(".error").html("<p>Please only enter one letter.</  p>");
     }
+    $("#letter").val("");
   });
 
 });
