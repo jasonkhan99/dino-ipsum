@@ -12,3 +12,16 @@ describe('test replace dino name function', () => {
   
   });
 });
+
+$("#guess").submit(function(event) {
+  event.preventDefault();
+  let inputString = $("#letter").val();
+  if (inputString.length !== 1 || inputString.match(/[^a-z]/i)) {
+    $(".error").html("<p>Please only enter one letter.</p>");
+  } else if (checkArray.includes(inputString)) {
+    for (i = 0; i < checkArray.length; i++) {
+      hiddenResponse.splice(i, 1, inputString);
+    }
+  }
+  $("#letter").val("");
+});

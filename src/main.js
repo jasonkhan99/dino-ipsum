@@ -40,14 +40,21 @@ $(document).ready(function () {
 
   $("#guess").submit(function(event) {
     event.preventDefault();
-    let inputArray = $("#letter").val();
-    if (inputArray.length !== 1 || inputArray.match(/[^a-z]/i)) {
+    let inputString = $("#letter").val();
+    let letterArray = [];
+    if (inputString.length !== 1 || inputString.match(/[^a-z]/i)) {
       $(".error").html("<p>Please only enter one letter.</  p>");
-    }
+    } else {
+      $(".error").hide();
+    }      
     $("#letter").val("");
+  }
   });
-
 });
+
+// if (response.includes(inputString)) {
+//   for (i = 0; i < response.length; i++) {
+//     letterArray.push(inputString);
 
   $(".keyboard-key").on({
     // Upon mouse-down, make the selectedLetter region immediately visible again
