@@ -14,11 +14,3 @@ export class DinoIpsumGenerator {
     }
   }
 }
-
-// function replaceDinoName(response) {
-//   let splitResponse = response.split("");
-//   for (let i=0; splitResponse.length > i; ++i) {
-//     splitResponse.shift().push("_ ");
-//   }
-//   return splitResponse.join("");
-// }

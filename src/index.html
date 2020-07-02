@@ -13,23 +13,16 @@
       <div class="showName">
       </div>
       <h3>Click here to generate a name:</h3>
-      <button id="dinoName" class="btn btn-outline-dark">Get Dino Name</button>
-      <div class="keyboard">
-        <p>Instructions: Type or click on an alphanumeric key to hear it.</p>
-        <div class="row">
-          <div class="twelve columns">
-              <button class="keyboard-key" id="key-1">1</button>
-              <button class="keyboard-key" id="key-2">2</button>
-              <button class="keyboard-key" id="key-3">3</button>
-              <button class="keyboard-key" id="key-4">4</button>
-              <button class="keyboard-key" id="key-5">5</button>
-              <button class="keyboard-key" id="key-6">6</button>
-              <button class="keyboard-key" id="key-7">7</button>
-              <button class="keyboard-key" id="key-8">8</button>
-              <button class="keyboard-key" id="key-9">9</button>
-              <button class="keyboard-key" id="key-0">0</button>
-          </div>
+      <button id="dinoName" class="btn btn-outline-dark btn-lg">Get Dino Name</button>
+      <form id="guess">
+        <div class="form-group">
+          <div class="error"></div>
+          <label for="letter">Guess a letter:</label>
+          <input type="text" id="letter">
         </div>
+        <button type="submit" class="btn btn-outline-dark btn-lg">Guess</button>
+      </form>
+      <!-- <div class="keyboard">
         <div class="row">
           <div class="twelve columns">
             <button class="keyboard-key" id="key-Q">Q</button>
@@ -75,10 +68,10 @@
       <a href="https://jquery.com/">jQuery</a>, and <a href="https://responsivevoice.com/">ResponsiveVoice</a>.
       <br />
       <!-- Legally required banner by ResponsiveVoice.org -->
-      <a href="https://responsivevoice.org">ResponsiveVoice-NonCommercial</a>
+      <!-- <a href="https://responsivevoice.org">ResponsiveVoice-NonCommercial</a>
       licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">
       <img title="ResponsiveVoice Text To Speech" src="https://responsivevoice.org/wp-content/uploads/2014/08/95x15.png" alt="95x15" width="95" height="15" />
-      </a>
+      </a> -->
     </div>
     <!-- <script src="talking_keyboard.js"></script> -->
   </body>

@@ -13,7 +13,7 @@ function isAlphanumericKey(keycode) {
 }
 
 $(document).ready(function () {
-  
+
   $("#dinoName").click(function() {
     
     (async () => {
@@ -36,6 +36,15 @@ $(document).ready(function () {
       $('.showName').text(`There was an error handling your request.`);
     }
   }
+
+  $("#guess").submit(function(event) {
+    event.preventDefault();
+    let inputArray = $("#letter").val();
+    if (inputArray.length > 1) {
+      (".error").html("<p>Please only enter one letter.</p>")
+    }
+  });
+
 });
 
   $(".keyboard-key").on({
