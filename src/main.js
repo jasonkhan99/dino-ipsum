@@ -45,15 +45,15 @@ $(document).ready(function () {
       if (inputString.length !== 1 || inputString.match(/[^a-z]/i)) {
         $(".error").html("<p>Please only enter one letter.</p>");
       } else if (!checkArray.includes(inputString)) {
+        $("#letter").val("");
         return $(".error").html("<p>Incorrect</p>");
       } else if (checkArray.includes(inputString)) {
         for (let i = 0; i < checkArray.length; i++) {
           if (checkArray[i].includes(inputString)) {
             splitResponse.splice(i, 1, inputString);
-          }
+          }        
         }
-        console.log(checkArray);
-        console.log(splitResponse);
+        $(".showName").text(splitResponse.join(" "));
       } else {
         $(".error").hide();
       }
