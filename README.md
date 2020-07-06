@@ -6,7 +6,7 @@
 
 ## Description
 
-_Long deiscription._
+_This webpage will generate a game of dinosaur hangman using the Dino Ipsum API_
 
 ### Specs
 | Spec | Input | Output |
@@ -15,22 +15,25 @@ _Long deiscription._
 
 ## Setup/Installation Requirements
 
-* _Visit the following link: _
+* _Visit the following link: https://github.com/jasonkhan99/dino-ipsum_
 * _Clone the repository to your desired directory._
 * _OR_
-* _Visit here: _
-
+* _Visit here: https://jasonkhan99.github.io/dino-ipsum/_
 
 ## Known Bugs
 
-_ _
+_no known bugs_
+
 ## Support and contact details
 
 _Contact me at...._
 
 ## Technologies Used
 
-_Technology!_
+HTML
+CSS
+Javascript
+JQuery
 
 ### License
 
